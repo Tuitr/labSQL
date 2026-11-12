@@ -1,0 +1,47 @@
+# --- Go: собранные программы ---
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/lab3
+/Lab3
+
+# Результаты тестов и профилирования
+*.test
+*.out
+coverage.*
+*.prof
+
+# Папка зависимостей (если используешь go mod vendor)
+/vendor/
+
+# Локальный workspace-файл Go
+go.work
+go.work.sum
+
+# --- Секреты: пароль от базы не должен попасть в репозиторий ---
+.env
+.env.*
+!.env.example
+
+# --- PostgreSQL: дампы и бэкапы (их можно пересоздать из скриптов) ---
+*.dump
+*.backup
+backup*.sql
+*_backup.sql
+
+# Логи
+*.log
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
+
+# --- Системные файлы ---
+.DS_Store
+Thumbs.db
+desktop.ini
